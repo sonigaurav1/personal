@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+}
+.mainlogo{
+    display: flex;
+
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: cyan;
+}
+.cennav{
+    display: flex;
+}
+.mainbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+
+}
+.line{
+    color: gray;
+}
+.conthead{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+}
+h1{
+    color: #f2f6fa;
+    font-family: Obviously, obviously-regular-fallback, sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 90px;
+    
+}
+.conthead{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contmain ul li{
+    display: flex;
+}

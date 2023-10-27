@@ -1,0 +1,16 @@
+/* This method is used by downloading fonts file by fonts.google.com
+@font-face {
+    src: url(/CSS/Fonts/Kablammo-Regular.ttf);
+    font-family: Kablomma;
+}  */
+
+h1 {
+    font-family: 'Roboto';
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,33 @@
+.animated-text {
+  display: inline-block;
+  font-size: 2em;
+  position: relative;
+  animation: glitchText 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes glitchText {
+  0%, 100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  10%, 90% {
+      transform: translateX(-0.5em);
+      opacity: 0.8;
+  }
+  20%, 80% {
+      transform: translateX(0.5em);
+      opacity: 0.8;
+  }
+  30%, 70% {
+      transform: translateX(-1em);
+      opacity: 0.6;
+  }
+  40%, 60% {
+      transform: translateX(1em);
+      opacity: 0.6;
+  }
+  50% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}

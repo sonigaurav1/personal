@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(35, 40, 48);
+}
+.cont1{
+    margin-top: 75px;
+    margin-right: 226px;
+    margin-left: 218px;
+
+}
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: white;
+}

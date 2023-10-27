@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandaki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Pawn Shop Manager</h1>
+
+    <h2>Add Pawn</h2>
+    <form id="pawnForm">
+        <label for="code">Ornament Code:</label>
+        <input type="text" id="code" name="code" required>
+        <br>
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" required>
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <label for="owner">Owner:</label>
+        <input type="text" id="owner" name="owner" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        <br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+        <br>
+        <button type="button" onclick="addPawn()">Add Pawn</button>
+    </form>
+
+    <h2>Pawn List</h2>
+    <table id="pawnTable">
+        <tr>
+            <th>Ornament Code</th>
+            <th>Weight</th>
+            <th>Date</th>
+            <th>Owner</th>
+            <th>Phone</th>
+            <th>Description</th>
+        </tr>
+    </table>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>

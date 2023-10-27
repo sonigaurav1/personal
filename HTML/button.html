@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        body {
+            background-image: url(/HTML/Image/Background.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Click this button to go Google.com</h4>
+    <a  href="https://www.google.com/" target="_blank" title="Google">
+        <button style="border-radius: 25px; font-size: 25px; background-color: rgb(224, 191, 24); color: blue;">click
+            me</button>
+    </a>
+    <br>
+    <h4>Click this button to change the word</h4>
+        <button onclick="doSomething()" style="border-radius: 25px; font-size: 25px; background-color: rgb(224, 191, 24); color: blue;">click
+            me</button>
+    <p id="greeting">Hello</p>
+    <script>
+        function doSomething() {
+            document.getElementById("greeting").innerHTML="GoodBye"
+        }
+    </script>
+</body>
+
+</html>

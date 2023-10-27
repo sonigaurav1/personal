@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myElement {
+            width: 1450px;
+            height: 690px;
+            background-image: url(doraemon.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myElement"></div>
+    <button onclick="doSomething()" id="myButton">Change Background Image</button>
+    <script>
+        var element = document.getElementById("myElement");
+        var button = document.getElementById("myButton");
+
+        button.addEventListener("click", function doSomething() {
+            element.style.backgroundImage = "url(shinchan.jpg)";
+        });
+    </script>
+</body>
+
+</html>

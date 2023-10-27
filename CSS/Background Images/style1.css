@@ -1,0 +1,16 @@
+body {
+    /* we can also write background properties in one single property. This is called a shorthand property.
+    background: cyan url("/HTML/Image/Backgound\ 2.jpeg") no-repeat fixed center;
+    background-size: cover; */
+    background-color: rgb(67, 132, 189);
+    background-image: url(/HTML/Image/Backgound\ 2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+P {
+    color: yellow;
+}

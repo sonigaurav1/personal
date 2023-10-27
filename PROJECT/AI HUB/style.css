@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: none;
+}
+
+nav li {
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+nav .dropdown:hover .dropdown-menu {
+  display: block;
+}

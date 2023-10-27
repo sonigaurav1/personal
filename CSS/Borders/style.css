@@ -1,0 +1,21 @@
+h1 {
+
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(320, 100%, 50%);
+    border-radius: 20px; /* max value is 20 px */
+    /* We can combile style, width, color in one line code as*/
+    /* border: solid 3px hsl(320, 100%, 50%) */
+}
+
+p{
+    margin:30px;
+    border-bottom: solid 5px rgb(0, 119, 255);
+    border-top: solid 5px rgb(53, 0, 127);
+    border-left: solid 5px rgb(230, 120, 120);
+    border-right: solid 5px rgb(209, 29, 29);
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "playfair display", serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+
+  /* background: url(https://wallpapercave.com/wp/wp7181995.jpg) no-repeat fixed
+    center;
+  background-size: cover;
+  height: calc(100vh - 80px); */
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(0, 120, 228);
+}
+label.logo {
+  font-size: 35px;
+  color: white;
+  line-height: 80px;
+  margin: 0 60px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,
+a:hover {
+  background-color: #1b9bff;
+  transition: 0.3s;
+}
+#check {
+  display: none;
+}
+.checkbtn {
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+@media (max-width: 910px) {
+  label.logo {
+    font-size: 30px;
+  }
+  nav ul a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 760px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(42, 59, 81);
+    text-align: center;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s ease;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ .kisu {
+    display: none;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #1b9bff;
+  }
+  .time {
+    float: right;
+    font-size: 25px;
+    display: none;
+  }
+  #fullscreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+  }
+
+  #fullscreen img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #full {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  label.logo {
+    font-size: 35px;
+    color: white;
+    line-height: 80px;
+    margin: 0 20px;
+    background-image: url(https://media.istockphoto.com/id/665114120/photo/gold-glitter-texture-abstract-background.jpg?s=1024x1024&w=is&k=20&c=Ua50nC-9qgwIty9SayZaQo4RDNql64RGpBAcIq5OR9M=);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* animation: logo 2s; */
+    /* animation-fill-mode: forwards; */
+  }
+  /* @keyframes logo {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 10px;
+
+    }
+  } */
+  /* .box{
+    width: 70vw;
+    height: 70vw;
+    background-color: cyan;
+    overflow: hidden;
+  } */
+  /* .box:hover img{
+    scale: 1.2;
+    transition: all ease 1s;
+  } */
+  #kisu {
+    width: 200vw;
+    height: 30vw;
+    background-color: black;
+    color: violet;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .div2 {
+    color: white;
+    padding: 0 10px 0 10px;
+    height: 20vw;
+    background-color: cyan;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .description-content{
+    width: 100vw;
+    height: calc(50vh - 30px);
+    position: relative;
+    font-size: 30px;
+    background: url(./papa.jpg) no-repeat fixed center/cover;
+
+
+  }
+  .shop-description{
+    margin-top: 30px;
+    margin-left: 30px;
+    color: white;
+
+  }
+  #facebook{
+    color: white;
+  }
+  .service {
+    animation: mymove 2s;
+    animation-fill-mode: forwards; /* If you want the 
+                                      animate to be 
+                                      in animated place 
+                                      then use this */
+    margin: 0;
+  }
+  @keyframes mymove {
+    from {
+      top: 0%;
+    }
+    to {
+      top: 25%;
+      color: rgb(0, 0, 0);
+    }
+  }
+  /* Set the map container size */
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+  #call{
+    border: none;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    font-size: 30px;
+    border-radius: 16px;
+    background-color: rgb(76, 117, 104);
+  }
+  .design-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 10vw 0;
+  }
+  /* .design-content1 {
+    width: 100vw;
+    height: calc(50% - 100px);
+    background-color: cyan; */
+  }
+  /* .design-container {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  } */
+  .design-content {
+    margin: 5vw;
+    width: 90vw;
+    height: 60%;
+    border-radius: 30px;
+    background-color: cyan;
+    overflow: hidden;
+    text-align: center;
+  }
+  .design-content img {
+    width: 90vw;
+    height: 90%;
+  }
+
+  .design-content .about {
+    text-align: center;
+    color: rgb(18, 35, 35);
+    height: 10%;
+  }
+  .design img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .design {
+    margin: 5vw;
+    width: 90vw;
+    height: 60%;
+    border-radius: 30px;
+    background-color: cyan;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+  #fullscreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+  }
+
+  #fullscreen img {
+    margin-top: 20vw;
+    max-width: 100%;
+    max-height: 80%;
+    display: block;
+  }
+
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  #full {
+    position: absolute;
+    right: 12px;
+    bottom: 5px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #download {
+    position: absolute;
+    right: 58px;
+    bottom: 5px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+.design-content .about {
+  width: 100%;
+  height: 1000vw;
+}
+
+#kisu {
+  width: 20vw;
+  height: 30vw;
+  background-color: cyan;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#kisu img {
+  margin: 30px 16% 0px 16%;
+  border-radius: 30px;
+}
+.about p {
+  color: rgb(6, 29, 31);
+  text-align: center;
+}
+#about-kisu {
+  font-size: 20px;
+  padding: 5px;
+}
+.service {
+  position: relative;
+  text-align: center;
+  color: red;
+  font-size: 45px;
+}
